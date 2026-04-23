@@ -64,7 +64,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: mazurlinux/backend:latest
+        image: mazurlinux/backend:11aa8908e322fc35e8d665ed95cd5a164b8260cc
         imagePullPolicy: Always
         env:
         - name: DB_HOST
@@ -108,7 +108,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: mazurlinux/frontend:latest
+        image: mazurlinux/frontend:11aa8908e322fc35e8d665ed95cd5a164b8260cc
         imagePullPolicy: Always
         ports:
         - containerPort: 80
