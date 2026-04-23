@@ -64,7 +64,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: twoj-uzytkownik-dockerhub/backend:latest
+        image: mazurlinux/backend:latest
         imagePullPolicy: Always
         env:
         - name: DB_HOST
@@ -108,7 +108,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: twoj-uzytkownik-dockerhub/frontend:latest
+        image: mazurlinux/frontend:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
