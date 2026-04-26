@@ -1,8 +1,15 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: development  # Wszystko wyląduje w ns 'development'
+namespace: development
 resources:
-  - ../../base
+- ../../base
 
 patches:
-  - path: ingress-dev.yaml
+- path: ingress-dev.yaml
+images:
+- name: mazurlinux/backend
+  newName: mazurlinux/backend
+  newTag: 0c9f69a877ca3c7391c5956ee5b713ab51c8bc35
+- name: mazurlinux/frontend
+  newName: mazurlinux/frontend
+  newTag: 0c9f69a877ca3c7391c5956ee5b713ab51c8bc35
