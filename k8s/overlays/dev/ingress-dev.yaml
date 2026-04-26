@@ -4,7 +4,7 @@ metadata:
   name: main-ingress
 spec:
   rules:
-  - host: prod.mazurart.pl # Nadpisujemy hosta na produkcyjnego
+  - host: dev.mazurart.pl # Nadpisujemy hosta na produkcyjnego
     http:
       paths:
       - path: /api
