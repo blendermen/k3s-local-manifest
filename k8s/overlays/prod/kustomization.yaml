@@ -1,8 +1,15 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: production   # Wszystko wyląduje w ns 'production'
+namespace: production
 resources:
-  - ../../base
+- ../../base
 
 patches:
-  - path: ingress-prod.yaml
+- path: ingress-prod.yaml
+images:
+- name: mazurlinux/backend
+  newName: mazurlinux/backend
+  newTag: 49c76621a163a0e21320aa9067e35694402b4e93
+- name: mazurlinux/frontend
+  newName: mazurlinux/frontend
+  newTag: 49c76621a163a0e21320aa9067e35694402b4e93
