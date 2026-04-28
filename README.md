@@ -23,5 +23,5 @@ The application consists of **three** tiers running within the Kubernetes cluste
 
 This project uses **two** separate environments: **Development** and **Production**.
 
-🔄 How it works
+🔄 How it works    
 More info on the main app repo [k3s-local-app](https://github.com/blendermen/k3s-local-app) 
