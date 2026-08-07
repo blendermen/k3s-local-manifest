@@ -9,7 +9,7 @@ patches:
 images:
 - name: mazurlinux/backend
   newName: mazurlinux/backend
-  newTag: f04ebe6ba41d03119c62ea6b62da6037ccfcc5db
+  newTag: de72f43ec17b047be19b5cd4950642f3c1546118
 - name: mazurlinux/frontend
   newName: mazurlinux/frontend
-  newTag: f04ebe6ba41d03119c62ea6b62da6037ccfcc5db
+  newTag: de72f43ec17b047be19b5cd4950642f3c1546118
